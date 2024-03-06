@@ -4,15 +4,15 @@ package com.zipcodewilmington.person;
  * If you did ObjectsOne lab, you might recognize this code?
  */
 public class Person {
-    private String name;
-    private int age;
+    private String name = "";
+    private int age = Integer.MAX_VALUE;
     private String gender;
     private int height;
     private String favColor;
 
 
     public Person(String name, int age, String gender, int height, String favColor) {
-        this.name = name;
+        this.name =name;
         this.age = age;
         this.gender = gender;
         this.height = height;
@@ -20,7 +20,9 @@ public class Person {
     }
 
     public Person() {
+
     }
+
 
     public Person(int age) {
         this.age = age;
@@ -30,6 +32,9 @@ public class Person {
     public Person(String name, int age) {
         this.name=name;
         this.age=age;
+    }
+    public Person(String name){
+        this.name = name;
     }
 
     public void setName(String name) {
@@ -49,38 +54,33 @@ public class Person {
     }
 
 
-    public String getGender() {
-        return gender;
-    }
+
+//    public String getGender() {
+//        return gender;
+//    }
+//
+//
+//    public void setGender(String gender) {
+//        this.gender = gender;
+//    }
+//
+//    public void setHeight(int height) {
+//        this.height = height;
+//    }
+//
+//    public void setFavColor(String favColor) {
+//        this.favColor = favColor;
+//    }
+//
+//    public int getHeight() {
+//        return height;
+//    }
+//
+//    public String getFavColor() {
+//        return favColor;
+//    }
 
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public void setFavColor(String favColor) {
-        this.favColor = favColor;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public String getFavColor() {
-        return favColor;
-    }
-
-    public static void main(String[] args) {
-        Person p=new Person();
-        p.setName("Leon");
-        p.setAge(5);
-        System.out.println(p.getName());
-        System.out.println(p.getAge());
-    }
 }
 
 

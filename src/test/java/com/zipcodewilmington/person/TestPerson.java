@@ -31,6 +31,7 @@ public class TestPerson {
 
         // When
         Person person = new Person();
+        person.setName(expected);
 
         // Then
         String actual = person.getName();
