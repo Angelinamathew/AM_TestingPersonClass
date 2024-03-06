@@ -26,14 +26,10 @@ public class Person {
         this.age = age;
     }
 
-    public Person(String name) {
-        this.name = name;
-    }
-    public Person(String favColor){
-        this.favColor = favColor;
-    }
 
     public Person(String name, int age) {
+        this.name=name;
+        this.age=age;
     }
 
     public void setName(String name) {
@@ -80,6 +76,10 @@ public class Person {
 
     public static void main(String[] args) {
         Person p=new Person();
+        p.setName("Leon");
+        p.setAge(5);
+        System.out.println(p.getName());
+        System.out.println(p.getAge());
     }
 }
 

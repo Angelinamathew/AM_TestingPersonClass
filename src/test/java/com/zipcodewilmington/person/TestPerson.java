@@ -30,7 +30,7 @@ public class TestPerson {
         String expected = "Leon";
 
         // When
-        Person person = new Person(expected);
+        Person person = new Person();
 
         // Then
         String actual = person.getName();
