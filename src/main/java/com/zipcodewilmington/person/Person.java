@@ -55,30 +55,30 @@ public class Person {
 
 
 
-//    public String getGender() {
-//        return gender;
-//    }
-//
-//
-//    public void setGender(String gender) {
-//        this.gender = gender;
-//    }
-//
-//    public void setHeight(int height) {
-//        this.height = height;
-//    }
-//
-//    public void setFavColor(String favColor) {
-//        this.favColor = favColor;
-//    }
-//
-//    public int getHeight() {
-//        return height;
-//    }
-//
-//    public String getFavColor() {
-//        return favColor;
-//    }
+    public String getGender() {
+        return gender;
+    }
+
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public void setFavColor(String favColor) {
+        this.favColor = favColor;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public String getFavColor() {
+        return favColor;
+    }
 
 
 }

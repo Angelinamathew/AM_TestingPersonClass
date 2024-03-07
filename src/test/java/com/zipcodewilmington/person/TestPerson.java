@@ -52,6 +52,7 @@ public class TestPerson {
     }
 
 
+
     @Test
     public void testConstructorWithNameAndAge() {
         // Given
@@ -96,4 +97,32 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testSetHeight(){
+        Person person = new Person();
+        Integer expected = 180;
+
+        person.setHeight(expected);
+        Integer actual = person.getHeight();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testfavColor(){
+        Person person = new Person();
+        String expected = "blue";
+
+        person.setFavColor(expected);
+        String actual = person.getFavColor();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void test(){
+        Person person = new Person();
+        String expected = "Female";
+
+        person.setGender(expected);
+        String actual = person.getGender();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
